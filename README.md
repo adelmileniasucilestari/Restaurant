@@ -1,2 +1,3 @@
 # Restaurant
-sebuah aplikasi android kasir di sebuah restaurant
+sebuah aplikasi android
+
