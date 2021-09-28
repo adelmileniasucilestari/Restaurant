@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@mipmap/background">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/poster"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/poster"
+        android:scaleType="fitXY"
+        app:riv_corner_radius_bottom_left="120dp"
+        app:riv_corner_radius_bottom_right="120dp"/>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/poster"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:text="Judul Film"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:text="Adventure, Family, Fantasy"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genre"
+        style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+        android:text="6.7/10"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"/>
+
+    <TableLayout
+        android:id="@+id/tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rate"
+        android:stretchColumns="2"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:paddingHorizontal="35dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language"
+                android:paddingHorizontal="25dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/12/2000"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:paddingHorizontal="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb"
+        android:layout_margin="5dp"
+        android:paddingHorizontal="50dp"
+        android:text="Here The Overview Film"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
