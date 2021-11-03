@@ -12,16 +12,25 @@
         android:id="@+id/poster"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/poster"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         app:riv_corner_radius_bottom_left="120dp"
         app:riv_corner_radius_bottom_right="120dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="250dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/title2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/poster"
         style="@style/TextAppearance.AppCompat.Title"
         android:text="Judul Film"
         android:gravity="center"
@@ -34,7 +43,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/title2"
         style="@style/TextAppearance.AppCompat.Subhead"
-        android:text="Adventure, Family, Fantasy"
         android:gravity="center"
         android:layout_margin="5dp"
         android:textColor="@color/black"/>
@@ -100,6 +108,7 @@
     </TableLayout>
 
     <TextView
+        android:id="@+id/overview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tb"
@@ -108,5 +117,8 @@
         android:text="Here The Overview Film"
         android:gravity="center_horizontal"
         android:textColor="@color/black"/>
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

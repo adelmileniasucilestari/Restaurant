@@ -7,7 +7,7 @@
     tools:context="com.example.molyst.MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/list_item"
+        android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp" />
